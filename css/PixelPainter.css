@@ -36,7 +36,7 @@ h1 {
   height: 98%;
   width: 20%;
   border-radius: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 #myGrid {
@@ -49,6 +49,7 @@ h1 {
   height: 98%;
   width: 55%;
   border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .rows {
