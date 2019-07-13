@@ -1,0 +1,99 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/assets/8-bit-pixel-art-city-2o.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 400%;
+}
+
+#pixelPainter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 85%;
+  width: 100%;
+}
+
+#myColor {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1%;
+  border: solid 3px black;
+  height: 98%;
+  width: 20%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#myGrid {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: solid 3px black;
+  padding: 1%;
+  height: 98%;
+  width: 55%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  height: 2.5%;
+  width: 100%;
+}
+
+.coloringBox {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background-color: white;
+  border: solid 1px black;
+  height: 100%;
+  width: 2.5%;
+  display: flex;
+  align-content: stretch;
+}
+
+button,
+input {
+  font-family: "Amatic SC", cursive;
+  font-size: 180%;
+  font-weight: bold;
+  width: 100%;
+  background-color: white;
+}
+
+/*MEDIA QUERIES.*/
+@media screen and (max-width: 600px) {
+  #pixelPainter {
+    display: flex;
+    flex-direction: column;
+  }
+  #myColor {
+    width: 100%;
+    float: right;
+  }
+  #myGrid {
+    width: 100%;
+    float: right;
+  }
+}
